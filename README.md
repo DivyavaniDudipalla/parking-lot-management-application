@@ -22,7 +22,7 @@ This class provides CLI-based commands for interacting with the Parking Lot Mana
 
 #### ✅ Example
 ```
-create-parking-lot --smallSlots 3 --largeSlots 2 --oversizeSlots 1
+create-parking-lot 10 8 5 --smallSlots 10 --largeSlots 8 --oversizeSlots 5
 ```
 
 ---
@@ -40,7 +40,8 @@ create-parking-lot --smallSlots 3 --largeSlots 2 --oversizeSlots 1
 
 #### ✅ Example
 ```
-park --licensePlate MH12AB1234 --vehicleType TRUCK
+park ABC123 SMALL_CAR
+park XYZ789 SUV --licensePlate XYZ789 --vehicleType SUV
 ```
 
 ---
@@ -57,7 +58,7 @@ park --licensePlate MH12AB1234 --vehicleType TRUCK
 
 #### ✅ Example
 ```
-leave --licensePlate MH12AB1234
+leave ABC123--licensePlate ABC123
 ```
 
 ---
@@ -74,7 +75,7 @@ leave --licensePlate MH12AB1234
 
 #### ✅ Example
 ```
-find --licensePlate MH12AB1234
+find ABC123--licensePlate ABC123
 ```
 
 ---
@@ -92,7 +93,7 @@ find --licensePlate MH12AB1234
 #### ✅ Examples
 ```
 available
-available --slotSizeStr SMALL
+available SMALL--slotSizeStr SMALL
 ```
 
 ---
